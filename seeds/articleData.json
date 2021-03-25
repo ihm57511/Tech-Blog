@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Hello",
+    "category": "Random",
+    "content": "Welcome to the tech blog."
+  },
+  {
+    "title": "Handlebars",
+    "category": "MVC",
+    "content": "Not just for bikes."
+  },
+  {
+    "title": "Hooks",
+    "category": "ORM",
+    "content": "Not just for fish."
+  },
+  {
+    "title": "API's",
+    "category": "API",
+    "content": "Bring in the data."
+  },
+  {
+    "title": "JavaScript",
+    "category": "Language",
+    "content": "Gets, the job done."
+  },
+  {
+    "title": "MYSQL",
+    "category": "Database",
+    "content": "Holds the data."
+  }
+]

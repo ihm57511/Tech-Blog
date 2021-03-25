@@ -11,8 +11,12 @@ Comments.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    body: {
+    content: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    article_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },
