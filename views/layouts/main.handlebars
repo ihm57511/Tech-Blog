@@ -10,7 +10,7 @@
   <header>
   <nav>
     <a href="/">Home</a>
-    <a href="###">Articles</a>
+    <a href="###">Dashboard</a>
     {{#if loggedin}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
@@ -18,5 +18,8 @@
     {{/if}}
   </nav>
   </header>
+  <main>
+    {{{body}}}
+  </main>
 </body>
 </html>
