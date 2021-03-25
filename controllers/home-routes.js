@@ -3,9 +3,13 @@ const { Article, Comments, User } = require('../models');
 
 router.get('/', async (req, res) => {
   try {
-    const articleData = await Article.findAll();
+    const articleData = await Article.findAll({
+      include: [User]
+    });
 
-    const articles = JSON.parse(JSON.stringify(articleData));
+    // const articles = JSON.parse(JSON.stringify(articleData));
+    const articles = articleData.map(article => article.get({ plain : true }));
+    console.log(articles)
     res.render('homepage', {
       articles,
     });
@@ -31,3 +35,5 @@ router.get('/article/:id', async (res, req) => {
     res.status(500).json(err)
   }
 });
+
+module.exports = router;
